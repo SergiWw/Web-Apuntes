@@ -48,7 +48,7 @@ document.getElementById('logo').addEventListener('click', function(e) {
     btnSubir.classList.remove('active');
     btnConsultar.classList.remove('active');
     document.getElementById('menu-dinamico').innerHTML = `
-    `;
+    `; 
 });
 
 document.getElementById('logoPerfil').addEventListener('click', function(e) {
