@@ -52,7 +52,7 @@ document.getElementById('logo').addEventListener('click', function(e) {
 });
 
 document.getElementById('logoPerfil').addEventListener('click', function(e) {
-    e.preventDefault();
+    e.preventDefault(); 
     document.getElementById('menu-dinamico').innerHTML = `
         <h2>Consultar Apuntes</h2>
         <p>Aquí iría la lista de apuntes subidos...</p>

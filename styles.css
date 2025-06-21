@@ -41,7 +41,7 @@
     box-sizing: border-box;
     background: #fff;
     color: #444;
-}
+} 
 
 .barraBusqueda:focus {
     border: 3px solid #026c97;
