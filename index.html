@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menú Principal</title>
+        <link rel="stylesheet" href="/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="menu-superior">
+            <div class="imagenesMenu">
+                <a>
+                    <img src="/imagenes/lineas.png" class="lineas" id="lineas">
+                </a>
+                <a id="logo" href="index.html">
+                    <img src="/imagenes/logo.png" class="logo">
+                </a>
+                <form class="menuBusqueda">
+                    <input type="text" placeholder="Buscar apuntes..." class="barraBusqueda">
+                    <button type="submit" class="botonBusqueda" aria-label="Buscar">
+                        <!-- SVG de lupa, puedes cambiar el color si lo deseas -->
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b3b3c3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                    </button>
+                </form>
+                <a id="logoPerfil" href="" class="botonPerfil">
+                    <img src="/imagenes/perfil.png" class="logoPerfil">
+                </a>
+            </div>
+            <div class="botonesMenu">
+                <a href="/index.html" class="botones" id="botonInicio">INICIO</a>
+                <a href="/subirApuntes.html" class="botones" id="botonSubirApuntes">
+                    <img src="/imagenes/iconoSubirApuntes.png" class="icono-boton">
+                    SUBIR APUNTES
+                </a>
+                <a href="/consultarApuntes.html" class="botones" id="botonConsultarApuntes">
+                    <img src="/imagenes/iconoConsultarApuntes.png" class="icono-boton">
+                    CONSULTAR APUNTES
+                </a>
+            </div>
+        </div>
+        <div class="menu-dinamico">
+
+        </div>
+        <div class="menu-lateral" id="menuLateral">
+            <div class="menu-lateral-header">
+                <h3>Menú</h3>
+                <button class="cerrar-menu" id="cerrarMenu">
+                    <img src="/imagenes/iconoCruz.png">
+                </button>
+            </div>
+            <ul class="menu-lateral-items">
+                <li><a href="#"><i class="icono">🏠</i> Inicio</a></li>
+                <li><a href="#"><i class="icono">📚</i> Mis Apuntes</a></li>
+                <li><a href="#"><i class="icono">⭐</i> Favoritos</a></li>
+                <li><a href="#"><i class="icono">📁</i> Categorías</a></li>
+                <li><a href="#"><i class="icono">📊</i> Estadísticas</a></li>
+                <li><a href="#"><i class="icono">⚙️</i> Configuración</a></li>
+                <li><a href="#"><i class="icono">❓</i> Ayuda</a></li>
+            </ul>
+        </div>
+        <!-- Overlay para cerrar el menú lateral al hacer clic fuera -->
+        <div class="menu-overlay" id="menuOverlay">
+
+        </div>
+        <!-- Overlay para cerrar el menú del perfil al hacer clic fuera -->
+        <div class="menu-overlay" id="menuOverlayPerfil">
+
+        </div>
+        <div class="menu-perfil" id="menuPerfil">
+            <div class="menu-perfil-header">
+                <h3>Perfil</h3>
+                <button class="cerrar-menu-perfil" id="cerrarMenuPerfil">
+                    <img src="/imagenes/iconoCruz.png">
+                </button>
+            </div>
+            <ul class="menu-perfil-items">
+                <li><a href="#"><img class="icono" src="/imagenes/iconoPerfil.png"> Mi Cuenta</a></li>
+                <li><a href="#"><i class="icono">⚙️</i> Ajustes</a></li>
+                <li><a href="#"><img class="icono" src="/imagenes/iconoCerrarSesión.png"> Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    <script src="/js.js"></script>
+    </body>
+</html>
